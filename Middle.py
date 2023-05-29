@@ -204,19 +204,19 @@ class Emergency:
         self.base.place(x = 250, y = 570)
         self.base.pack(side = 'bottom')
         
-        self.name = Entry(self.window, width = 50)
+        self.name = Entry(self.window, width = 60)
         self.name.place(x=820,y=100)
         self.button1 = Button(self.window, text="지도검색", padx=149,font=self.fontStyle2)
         self.button1.place(x=820,y=120)
 
-        self.button2 = Button(self.window, text="즐겨찾기등록",font=self.fontStyle2)
-        self.button2.place(x=1000,y=300)
+        self.button2 = Button(self.window, text="즐겨찾기등록", padx=122, font=self.fontStyle2)
+        self.button2.place(x=820,y=300)
 
-        self.button3 = Button(self.window, text="텔레그램",font=self.fontStyle2)
-        self.button3.place(x=1000,y=500)
+        self.button3 = Button(self.window, text="텔레그램", padx = 149, font=self.fontStyle2)
+        self.button3.place(x=820,y=400)
         
-        self.loadData = Button(self.window, text='데이터 받아오기',font=self.fontStyle2, command=self.mapEnergency)
-        self.loadData.place(x=1000,y=500)
+        self.loadData = Button(self.window, text='데이터 받아오기', padx = 100, font=self.fontStyle2, command=self.mapEnergency)
+        self.loadData.place(x=820,y=500)
 
         self.window.mainloop()
 
